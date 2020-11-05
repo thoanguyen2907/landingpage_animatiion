@@ -1,0 +1,275 @@
+.row{
+    padding: 0 15px !important; 
+}
+.header{
+
+    background-image: url("./images/polygon-1.png");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}
+.overlay{
+    width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+    background: linear-gradient(to right, hsl(219deg 61% 24%) 0%, rgb(23 85 35) 45%, rgb(34 122 75 / 62%) 55%);;
+    opacity: 0.6;
+    z-index: -2; 
+}
+.header__content{
+    text-align: center;
+
+    margin-top: 40px;
+}
+.header__title{
+    color: white; 
+    letter-spacing: 7px;
+    padding: 4px 6px;
+    background-color: gray;
+
+}
+.header__img__gallery > img{
+position: absolute;
+}
+.banner-left-1{
+    bottom: 2%;
+    left: 5%;
+}
+.banner-left-2{
+    left: 3%; 
+    bottom: 50%; 
+}
+.banner-left-3{
+    left: 7%; 
+    bottom: 55%; 
+}
+.banner-center{
+    left: 32%;
+    bottom: 20%;
+}
+.banner-right-1{
+    right: 8%; 
+    bottom: 9%
+}
+.banner-right-2{
+    right: 14%; 
+    bottom: 45%; 
+}
+.banner-right-3{
+    right: 2%; 
+    bottom: 55%; 
+}
+.banner-right-4{
+    right: 0%; 
+    bottom: 38%; 
+}
+
+/*NavTab*/
+.category__business{
+    padding: 50px; 
+    margin-top: 50px; 
+    margin-bottom: 300px;
+}
+.category__business__tab ul{
+    justify-content: center;
+    background-color: #eaf0ed;
+    padding: 20px 0; 
+}
+.category__business__tab .nav-pills > li{
+    padding: 10px 30px;
+}
+.category__business__tab .nav-pills > li > a.nav-link{
+    font-size: 20px;
+    color: black !important; 
+    border-radius: 0px !important;
+    padding:5px 0 !important; 
+}
+.category__business__tab .nav-pills > li > a.active{
+    background-color: transparent;
+    
+}
+.category__business__tab__content{
+    padding: 0 15px; 
+}
+.category__business__tab__content img{
+    width: 100%;
+    height: 300px; 
+}
+
+.overlay__category{
+    background-color: #3a9166;
+    opacity: 0; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0; 
+    z-index: 9;
+    transition: all 0.4s;
+
+}
+
+.overlay__category::before{
+    content: "";
+    background-color: white;
+    height: 5px;
+    z-index: 10;
+    display: block;
+    position: absolute;
+    top: 10%; 
+    right: 50%;
+    left: 50%; 
+    transition:  all 0.4s;
+}
+.overlay__category:hover::before{
+    right: 5%;
+    left: 5%; 
+}
+.overlay__category::after{
+    content: "";
+    background-color: white;
+    height: 5px;
+    display: block;
+    position: absolute;
+    bottom: 10%; 
+    right: 50%;
+    left: 50%; 
+    transition:  all 0.4s;
+}
+.overlay__category:hover::after{
+    right: 5%;
+    left: 5%; 
+}
+.category__business__item span::before{
+    content: "";
+    background-color: white;
+    width: 5px;
+    display: block;
+    position: absolute;
+    left: 5%; 
+    top: 50%;
+    bottom: 50%; 
+    transition:  all 0.4s;
+    z-index: 10;
+}
+.category__business__item:hover span::before{  
+    top:10%;
+    bottom: 10%; 
+}
+.category__business__item span::after{
+    content: "";
+    background-color: white;
+    width: 5px;
+    display: block;
+    position: absolute;
+    right: 5%; 
+    top: 50%;
+    bottom: 50%; 
+    transition:  all 0.4s;
+    z-index: 10;
+}
+.category__business__item:hover span::after{  
+    top:10%;
+    bottom: 10%; 
+}
+.overlay__preview{
+    z-index: 9;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.overlay__preview i {
+    font-size: 40px; 
+    margin-bottom: 15px;
+}
+.overlay__preview p {
+    letter-spacing: 12px;
+
+}
+.category__business__item:hover .overlay__preview{
+    opacity: 1;
+}
+.category__business__item:hover .overlay__category{
+    opacity: 0.8;
+}
+
+.nav-pills > .link_navPill::after{
+    content: "";
+    display: block;
+    background-color: black;
+    width: 0%;
+    height: 3px;
+    transition: all 0.4s ease; 
+}
+.nav-pills > .link_navPill:hover::after{
+    width: 100%;
+
+}
+
+/* .category__business__tab .nav-pills > li > a.active{
+  
+   border-bottom: 3px solid black;
+
+} */
+
+/*PARALAX*/
+
+#parallax{
+    background: rgb(31 30 30 / 78%);
+    background-image: url("./images/business/creative.png");
+    height: 800px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.sneaker__center{
+    position: absolute;
+    left: 30%; 
+    top: -20%;
+}
+.unique__left__1{
+    position: absolute;
+    left: 5%;
+    top: -7%;
+}
+.building__left__2{
+    position: absolute;
+    left: 5%;
+    top: 60%;
+
+}
+.kathy__right__1{
+    position: absolute;
+    right: 5%;
+    top: -7%;
+}
+.mountain__right__2{
+    position: absolute;
+    right: 5%;
+    top: 60%;
+
+}
+.flower__right__3{
+        position: absolute;
+        right: 0;
+        top: 35%;
+}
+
+#scene{
+    padding: 200px 30px;
+}
+
